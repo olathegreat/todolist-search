@@ -1,0 +1,115 @@
+@font-face{
+    font-family: "newfont";
+    src:url(/public/ACaslonPro-Regular.otf)
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: newfont;
+
+}
+.Todomain{
+    display: flex;
+    flex-direction: column;
+
+
+    background-color: rgb(44, 255, 135);
+}
+button{
+    background-color: rgb(12, 53, 236);
+    color: white;
+    border: none;
+    padding: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+input{
+    padding: 3px;
+
+}
+button:focus{
+    outline: none;
+}
+input:focus{
+    outline: none;
+}
+
+.todobar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.todobar:last-child{
+    border-bottom: none;
+}
+form{
+    width: 100%;
+}
+i{
+    
+
+    background-color: rgb(253, 50, 50);
+    color: white;
+    font-size: .7em;
+    border-radius: 2px;
+}
+.App{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.search{
+    
+    background-color: rgb(37, 36, 36);
+    margin-left: 20px;
+    color: white;
+    padding-top:10px;
+    padding-bottom: 0px;
+    border-radius: 2px;
+    margin-left: 50px;
+}
+li{
+    text-decoration: none;
+}
+h3{
+    text-align: center;
+}
+.main{
+    display: flex;
+    padding: 30px;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+}
+.Todomain{
+    padding-top: 10px;
+    padding-bottom: 0px;
+    border-radius: 3px;
+}
+.resultBar{
+    border-bottom: 1px solid rgb(135, 133, 133) ;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+.resultBar:last-child{
+    border-bottom: none;
+}
+
+@media (max-width:600px) {
+    .main{
+        flex-direction: column;
+        height: auto;
+    }
+    .search{
+        margin-top: 30px;
+        margin-left: 0;
+    }
+    
+}
